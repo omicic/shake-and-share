@@ -19,6 +19,7 @@ Basic styles
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -38,6 +39,7 @@ h6 {
 
 .container {
     width: 90%;
+    margin: auto;
 }
 
 button {
@@ -57,13 +59,23 @@ a {
     text-decoration: none;
 }
 
+.logo {
+    width: 150px;
+    height: auto;
+    transition: var(--transition);
+}
+
+.logo:hover {
+    color: var(--cream);
+    width: 200px;
+}
+
 /***header***/
 header {
     background-image: url(img/header.png);
     background-position: center;
     background-size: cover;
     height: 100vh;
-
 }
 
 /***navbar***/
@@ -90,7 +102,6 @@ header {
     color: var(--violet);
     text-align: center;
     font-weight: 500;
-    margin: auto;
 }
 
 .navbar .navbar-nav .nav-item .nav-link {
@@ -98,6 +109,20 @@ header {
     text-transform: uppercase;
     font-weight: 500;
     letter-spacing: 1px;
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: var(--white) !important;
+    font-weight: 700;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: var(--white) !important;
+    font-weight: 700;
 }
 
 hgroup {
@@ -112,13 +137,16 @@ hgroup .row {
     height: 100vh;
 }
 
-hgroup .row .col-6:nth-child(1) {
-    padding-left: 200px;
-    margin: auto;
+hgroup .row .col-md-6:nth-child(1n) {
+    padding-left: 100px;
 }
 
-hgroup .row .col-6:nth-child(1) p {
-    font-size: .9rem;
+hgroup .row .col-md-6:nth-child(2n) {
+    padding: 0;
+}
+
+hgroup .row .col-md-6:nth-child(1n) p {
+    font-size: 1rem;
     text-transform: uppercase;
 }
 
@@ -204,4 +232,48 @@ header hgroup .row button:hover {
 #kursevi p {
     font-weight: 500;
     letter-spacing: 1px;
+}
+
+/***footer***/
+footer {
+    color: var(--white);
+    background-image: url(img/footer.png);
+    background-position: center;
+    background-size: cover;
+    height: 265px;
+    width: 100%;
+    margin: auto;
+}
+
+/* footer img {
+    width: 150px;
+    height: auto;
+} */
+
+footer .row {
+    padding-top: 100px;
+}
+
+footer .row p {
+    margin: 0;
+}
+
+footer .row a {
+    color: var(--cream);
+}
+
+footer .row .col-md-6 {
+    font-size: 2rem;
+
+}
+
+footer .row .col-md-6 a {
+    color: var(--white);
+    margin-left: 20px;
+    transition: var(--transition);
+}
+
+footer .row .col-md-6 a:hover {
+    color: var(--cream);
+    font-size: 3rem;
 }
