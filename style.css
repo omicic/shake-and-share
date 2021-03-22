@@ -146,18 +146,35 @@ header hgroup .row button:hover {
 }
 
 #radionice button {
-    background: var(--violet);
+    background: linear-gradient(to left, var(--violet), var(--blue));
     color: var(--white);
     border: none;
 }
 
 #radionice button:hover {
-    color: var(--violet);
-    background: var(--cream);
-
+    background: linear-gradient(to right, var(--violet), var(--blue));
+    box-shadow: 20px 0 20px lightgray !important;
 }
 
 #radionice p {
     font-weight: 500;
     letter-spacing: 1px;
+}
+
+/***divider***/
+.divider {
+    background-image: url(img/divider.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.divider .row {
+    height: 100vh;
+}
+
+.divider .row p {
+    transform: rotate(-12deg);
+    text-align: center;
+    font-size: 1.2rem;
+    padding-top: 100px
 }
