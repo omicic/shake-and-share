@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;800&display=swap');
+
+:root {
+    --primaryColor: #2e3366;
+    --violet: #690b9a;
+    --pink: #af358c;
+    --blue: #2969ca;
+    --lightBlue: #22B8CF;
+    --cream: #f6d2d4;
+    --white: #fff;
+    --font: 16px;
+    --fontFamily: 'Raleway', sans-serif;
+    --transition: .4s ease-in-out;
+}
+
+/**********
+Basic styles
+**********/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--fontFamily);
+    font-size: var(--font);
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 800;
+}
+
+.container {
+    width: 90%;
+}
+
+button {
+    border-radius: 30px;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+button:focus {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/***header***/
+header {
+    background-image: url(img/header.png);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    clip-path: polygon(100% 0, 100% 58%, 62% 100%, 1% 100%, 0 0);
+}
+
+/***navbar***/
+.navbar {
+    background: var(--violet) !important;
+    color: var(--white) !important;
+    opacity: .9;
+}
+
+.navbar-brand {
+    color: var(--white) !important;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-right: 0;
+    padding: 0;
+    line-height: 1rem;
+}
+
+.navbar h3 {
+    border-radius: 50%;
+    padding: 5px;
+    background: var(--white);
+    color: var(--violet);
+    text-align: center;
+    font-weight: 500;
+    margin: auto;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+hgroup {
+    color: var(--white);
+}
+
+hgroup h1 {
+    font-size: 2.5rem;
+}
+
+hgroup .row {
+    height: 100vh;
+}
+
+hgroup .row .col-6:nth-child(1) {
+    padding-left: 200px;
+    margin: auto;
+}
+
+hgroup .row .col-6:nth-child(1) p {
+    font-size: .9rem;
+    text-transform: uppercase;
+}
+
+.row button {
+    background: transparent;
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+
+.row button:hover {
+    border: none;
+    color: var(--primaryColor);
+    background: var(--white);
+
+}
