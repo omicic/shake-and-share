@@ -63,7 +63,7 @@ header {
     background-position: center;
     background-size: cover;
     height: 100vh;
-    clip-path: polygon(100% 0, 100% 58%, 62% 100%, 1% 100%, 0 0);
+
 }
 
 /***navbar***/
@@ -71,6 +71,7 @@ header {
     background: var(--violet) !important;
     color: var(--white) !important;
     opacity: .9;
+    overflow: visible;
 }
 
 .navbar-brand {
@@ -121,15 +122,42 @@ hgroup .row .col-6:nth-child(1) p {
     text-transform: uppercase;
 }
 
-.row button {
+header hgroup .row button {
     background: transparent;
     border: 1px solid var(--white);
     color: var(--white);
 }
 
-.row button:hover {
+header hgroup .row button:hover {
     border: none;
     color: var(--primaryColor);
     background: var(--white);
+}
 
+/***radionice***/
+#radionice h2 {
+    color: var(--violet);
+    letter-spacing: 1px;
+}
+
+#radionice img {
+    width: 100%;
+    margin: auto;
+}
+
+#radionice button {
+    background: var(--violet);
+    color: var(--white);
+    border: none;
+}
+
+#radionice button:hover {
+    color: var(--violet);
+    background: var(--cream);
+
+}
+
+#radionice p {
+    font-weight: 500;
+    letter-spacing: 1px;
 }
