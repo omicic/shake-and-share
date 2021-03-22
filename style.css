@@ -169,7 +169,7 @@ header hgroup .row button:hover {
 }
 
 .divider .row {
-    height: 100vh;
+    height: 110vh;
 }
 
 .divider .row p {
@@ -177,4 +177,31 @@ header hgroup .row button:hover {
     text-align: center;
     font-size: 1.2rem;
     padding-top: 100px
+}
+
+/***kursevi***/
+#kursevi h2 {
+    color: var(--violet);
+    letter-spacing: 1px;
+}
+
+#kursevi img {
+    width: 100%;
+    margin: auto;
+}
+
+#kursevi button {
+    background: linear-gradient(to left, var(--violet), var(--blue));
+    color: var(--white);
+    border: none;
+}
+
+#kursevi button:hover {
+    background: linear-gradient(to right, var(--violet), var(--blue));
+    box-shadow: 20px 0 20px lightgray !important;
+}
+
+#kursevi p {
+    font-weight: 500;
+    letter-spacing: 1px;
 }
