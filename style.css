@@ -49,6 +49,7 @@ button {
     letter-spacing: 2px;
     font-weight: 600;
     transition: var(--transition);
+
 }
 
 button:focus {
@@ -240,18 +241,12 @@ footer {
     background-image: url(img/footer.png);
     background-position: center;
     background-size: cover;
-    height: 265px;
-    width: 100%;
-    margin: auto;
+
 }
 
-/* footer img {
-    width: 150px;
-    height: auto;
-} */
 
 footer .row {
-    padding-top: 100px;
+    /*  padding-top: 100px; */
 }
 
 footer .row p {
@@ -295,4 +290,73 @@ footer .row .col-md-6 a:hover {
 .radionicehtml button:hover {
     background: linear-gradient(to right, var(--violet), var(--blue));
     box-shadow: 20px 0 20px lightgray !important;
+}
+
+
+@media(max-width:767px) {
+
+
+    hgroup h1 {
+        font-size: 2rem;
+        padding-top: 150px;
+        text-align: center;
+    }
+
+    hgroup .row .col-md-6:nth-child(n) {
+        padding: 20px;
+    }
+
+    hgroup .row .col-md-6:nth-child(n) p {
+        font-size: .9rem;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    hgroup .row .col-md-6:nth-child(n) button {
+        text-align: center;
+    }
+
+    hgroup .row {
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+
+    button {
+        letter-spacing: 1px;
+        padding: 10px 20px;
+        font-size: .9rem;
+        margin: 20px 0;
+    }
+
+    footer {
+        background-image: url(img/footer-mob.png);
+        height: 405px;
+
+    }
+
+    footer .row {
+        align-items: center;
+        justify-content: center;
+        padding-top: 50px;
+        text-align: center;
+    }
+
+    footer .row p {
+        font-size: .9rem;
+    }
+
+    footer .row h3 {
+        font-size: 1.5rem;
+        padding-top: 30px;
+    }
+
+
+}
+
+@media(max-width:767px) {
+    .container {
+        width: 100%;
+        margin: auto;
+    }
 }
